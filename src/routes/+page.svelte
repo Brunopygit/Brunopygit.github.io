@@ -84,7 +84,7 @@
     }
   </script>
   
-  
+  <center>
   {#if !autenticado}
     <p>Preencha os campos:</p>
     <p>Site teste, exercício 02 de dw4.</p>
@@ -102,6 +102,32 @@
     <button onclick={excluir_usuario}>Excluir conta</button>
     <button onclick={desautenticar_usuario}>Sair da conta</button>
   {/if}
-  
+  </center>
+
+  <div class="fundo-homepage">
+</div>
+<br />
+<br />
+
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg,rgb(24, 166, 248),rgb(80, 51, 240));
+    color: rgb(46, 128, 206);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.fundo-homepage {
+    background: rgba(64, 116, 228, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
   
   
