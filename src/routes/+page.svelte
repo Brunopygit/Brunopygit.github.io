@@ -1,3 +1,19 @@
+<div class="fundo-homepage">
+</div>
+<br />
+<br />
+
+<style>
+
+.fundo-homepage {
+background-color:rgb(26, 58, 238);
+padding: 800px;
+}
+
+</style>
+
+
+
 <script>
     let nome_usuario = '', senha_usuario = '', autenticado = false;
     let usuarios = {};
@@ -105,17 +121,5 @@
   {/if}
   </center>
 
-  <div class="fundo-homepage">
-</div>
-<br />
-<br />
 
-<style>
-
-.fundo-homepage {
-background-color:rgb(26, 58, 238);
-padding: 800px;
-}
-
-</style>
   
