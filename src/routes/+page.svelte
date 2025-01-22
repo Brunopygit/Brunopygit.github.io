@@ -80,7 +80,7 @@
     :global(body) {
         background-color: rgb(15, 15, 15); /* Cor de fundo azul, em formato RGB */
         color: rgb(255, 255, 255); /* Cor do texto */
-        font-family: DIN Neuzeit Grotesk & Avenir Light; /* Fonte para o texto */
+        font-family: Helvetica; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
@@ -105,7 +105,7 @@
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color: rgb(85, 23, 126); /* Cor do botão */
+        background-color: rgb(252, 248, 51); /* Cor do botão */
         color: white;
         border: none;
         border-radius: 5px;
@@ -113,7 +113,7 @@
     }
 
     button:hover {
-        background-color: rgb(50, 1, 65); /* Tom mais escuro ao passar o mouse */
+        background-color: rgb(251, 255, 0); /* Tom mais escuro ao passar o mouse */
     }
 
     input {
