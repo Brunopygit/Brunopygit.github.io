@@ -84,6 +84,9 @@
     }
   </script>
   
+  body {
+    background-color: blue;
+  
 
   <center>
   {#if !autenticado}
@@ -105,9 +108,7 @@
   {/if}
   </center>
 
-  p {
-    background-color: blue;
-  }
+}
 
 
   
