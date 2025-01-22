@@ -77,28 +77,47 @@
 </script>
 
 <style>
+    /* Corpo do layout com ajuste para centralizar apenas o conteúdo */
     :global(body) {
         background-color: rgb(15, 15, 15); /* Cor de fundo azul, em formato RGB */
         color: rgb(255, 255, 255); /* Cor do texto */
         font-family: Helvetica; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
-        text-align: center; /* Centraliza o texto */
         margin: 0;
         padding: 0;
         height: 100vh; /* Ocupa toda a altura da tela */
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
 
+    /* Estilos para a navbar */
+    .navbar {
+        background-color: rgb(0, 0, 0); /* Cor de fundo preta para a navbar */
+        padding: 10px 20px;
+        text-align: left;
+        color: white;
+        font-size: 18px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilos para o conteúdo principal (container) */
     .container {
         background-color: white; /* Fundo branco */
-        color:rgb(0, 0, 0); /* Texto preto para contraste */
+        color: rgb(0, 0, 0); /* Texto preto para contraste */
         padding: 20px; /* Menor espaçamento para ajustar a altura */
         width: 500px; /* Largura fixa para a caixa */
         border-radius: 20px; /* Bordas arredondadas */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+        margin: 20px auto; /* Centraliza o conteúdo dentro da página */
     }
 
     /* Estilos adicionais para os botões */
@@ -129,7 +148,15 @@
     }
 </style>
 
-<h1>BEM VINDO</h1>
+<!-- Barra de navegação -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+</div>
+
+<!-- Conteúdo principal -->
+<h1 style="text-align: center;">BEM VINDO</h1>
 <center>
   <div class="container">
     {#if !autenticado}
