@@ -7,7 +7,7 @@
 
 .fundo-homepage {
 background-color:rgb(26, 58, 238);
-padding: 800px;
+background: 400px;
 }
 
 </style>
