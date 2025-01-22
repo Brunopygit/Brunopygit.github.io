@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/#">Home</a>
+        <a class="navbar-brand" href="/#">DW4</a>
         <button
             class="navbar-toggler"
             type="button"
@@ -15,22 +15,13 @@
             aria-label="Toggle navigation"
         >
             <span class="navbar-toggler-icon"></span>
-        
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/sobre">Sobre</a>
                 </li>
             </ul>
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/receitas">Receitas</a>
-                </li>
-            </ul>
-        </div>
         </div>
     </div>
 </nav>
