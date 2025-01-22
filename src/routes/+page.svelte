@@ -78,13 +78,13 @@
 
 <style>
     :global(body) {
-        background-color: rgb(26, 26, 26); /* Cor de fundo azul, em formato RGB */
+        background-color: rgb(15, 15, 15); /* Cor de fundo azul, em formato RGB */
         color:rgb(255, 255, 255); /* Cor do texto*/
         font-family: DIN Neuzeit Grotesk & Avenir Light; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
-        margin: 0;
-        padding: 0;
+        margin: 10px;
+        padding: 90px;
         height: 100vh; /* Ocupa toda a altura da tela */
         display: flex;
         justify-content: center;
