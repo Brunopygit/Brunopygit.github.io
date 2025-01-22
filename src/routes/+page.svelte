@@ -112,12 +112,12 @@
 <style>
 
 .fundo-homepage {
-    background: rgba(64, 116, 228, 0.3);
-    padding: 30px;
-    border-radius: 10px;
+    background: rgb(255, 0, 157);
+    padding: 300px;
+    border-radius: 300px;
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
 }
 
 </style>
