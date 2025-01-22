@@ -131,13 +131,6 @@
     }
 </style>
 
-<!-- Barra de navegação -->
-<div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">Sobre</a>
-    <a href="#">Contato</a>
-</div>
-
 <!-- Conteúdo principal -->
 <h1 style="text-align: center;">BEM VINDO</h1>
 <center>
