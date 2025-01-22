@@ -1,3 +1,7 @@
+<script>
+    let { children } = $props();
+</script>
+
 <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="/#">Home</a>
@@ -10,18 +14,25 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/sobre">Sobre</a>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/receitas">Receitas</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Pesquisa</button>
-        </form>
-      </div>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre</a>
+                </li>
+            </ul>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/receitas">Receitas</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </div>
-  </nav>
+</nav>
+
+{@render children()}
