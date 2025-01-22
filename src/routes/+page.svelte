@@ -84,8 +84,7 @@
     }
   </script>
   
-  body {
-    background-color: blue;
+ 
   
 
   <center>
@@ -108,7 +107,13 @@
   {/if}
   </center>
 
-}
+  <style>
+    body {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
 
 
   
