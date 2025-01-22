@@ -129,14 +129,14 @@
     }
 </style>
 
-<br><h1>BEM VINDO</h1></br>
+<br><h1>BEM VINDO</h1></br><br />
 <center>
   <div class="container">
     {#if !autenticado}
       <p>PREENCHA TODOS OS CAMPOS:</p></br>
-      NOME: <input type="text" id="nome_usuario" /><br />
-      SENHA: <input type="password" id="senha_usuario" /><br />
-      DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
+      NOME: <input type="text" id="nome_usuario" /><br /><br />
+      SENHA: <input type="password" id="senha_usuario" /><br /><br />
+      DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br /><br />
       <button onclick={registrar_usuario}>SIGN UP</button>
       <button onclick={autenticar_usuario}>LOGIN</button>
     {:else}
