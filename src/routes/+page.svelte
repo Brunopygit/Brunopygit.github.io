@@ -78,10 +78,10 @@
 
 <style>
     :global(body) {
-        background-color: rgb(0, 0, 255); /* Cor de fundo azul, em formato RGB */
-        color: white; /* Cor do texto em branco */
+        background-color: rgb(0, 102, 255); /* Cor de fundo azul, em formato RGB */
+        color: black; /* Cor do texto em branco */
         font-family: Arial, sans-serif; /* Fonte para o texto */
-        font-size: 18px; /* Tamanho do texto moderado */
+        font-size: 30px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
         padding: 0;
@@ -96,7 +96,7 @@
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color: #4CAF50; /* Cor verde para os botões */
+        background-color:rgb(209, 50, 50); /* Cor verde para os botões */
         color: white;
         border: none;
         border-radius: 5px;
@@ -104,7 +104,7 @@
     }
 
     button:hover {
-        background-color: #45a049; /* Tom mais escuro ao passar o mouse */
+        background-color:rgb(255, 0, 0); /* Tom mais escuro ao passar o mouse */
     }
 
     input {
@@ -119,8 +119,8 @@
 
 <center>
   {#if !autenticado}
-    <p>Preencha os campos:</p>
-    <p>Site teste, exercício 02 de dw4.</p>
+    <p>ÁREA EXCLUSIVA PARA LOGIN</p>
+    <p>Preencha todos os campos:</p>
     Nome do usuário: <input type="text" id="nome_usuario" /><br />
     Senha: <input type="password" id="senha_usuario" /><br />
     Data de nascimento: <input type="date" id="data_nascimento" /><br />
