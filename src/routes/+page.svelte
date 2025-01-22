@@ -78,10 +78,10 @@
 
 <style>
     :global(body) {
-        background-color: rgb(0, 2, 100); /* Cor de fundo azul, em formato RGB */
+        background-color: rgb(26, 26, 26); /* Cor de fundo azul, em formato RGB */
         color:rgb(255, 255, 255); /* Cor do texto*/
         font-family: DIN Neuzeit Grotesk & Avenir Light; /* Fonte para o texto */
-        font-size: 20px; /* Tamanho do texto moderado */
+        font-size: 15px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
         padding: 0;
@@ -96,7 +96,7 @@
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color:rgb(147, 72, 197); /* Cor verde para os botões */
+        background-color:rgb(167, 100, 212); /* Cor verde para os botões */
         color: white;
         border: none;
         border-radius: 5px;
@@ -117,14 +117,15 @@
     }
 </style>
 
+
 <center>
   {#if !autenticado}
     <p>PREENCHA TODOS OS CAMPOS:</p>
-    NOME DO USUÁRIO: <input type="text" id="nome_usuario" /><br />
+    NOME: <input type="text" id="nome_usuario" /><br />
     SENHA: <input type="password" id="senha_usuario" /><br />
     DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
-    <button onclick={registrar_usuario}>Registrar usuário</button>
-    <button onclick={autenticar_usuario}>Autenticar usuário</button>
+    <button onclick={registrar_usuario}>SIGN UP</button>
+    <button onclick={autenticar_usuario}>LOGIN</button>
   {:else}
     <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
     <button onclick={excluir_usuario}>Excluir conta</button>
