@@ -133,7 +133,7 @@
 <center>
   <div class="container">
     {#if !autenticado}
-      <p>PREENCHA TODOS OS CAMPOS:</p>
+      <p>PREENCHA TODOS OS CAMPOS:</p></br>
       NOME: <input type="text" id="nome_usuario" /><br />
       SENHA: <input type="password" id="senha_usuario" /><br />
       DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
