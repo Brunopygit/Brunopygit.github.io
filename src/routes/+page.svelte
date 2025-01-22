@@ -79,9 +79,9 @@
 <style>
     :global(body) {
         background-color: rgb(0, 2, 100); /* Cor de fundo azul, em formato RGB */
-        color: #483D8B; /* Cor do texto*/
-        font-family: Oswald Medium & Roboto Bold; /* Fonte para o texto */
-        font-size: 25px; /* Tamanho do texto moderado */
+        color:rgb(255, 255, 255); /* Cor do texto*/
+        font-family: DIN Neuzeit Grotesk & Avenir Light; /* Fonte para o texto */
+        font-size: 20px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
         padding: 0;
@@ -119,11 +119,10 @@
 
 <center>
   {#if !autenticado}
-    <p>ÁREA EXCLUSIVA PARA LOGIN</p>
-    <p>Preencha todos os campos:</p>
-    Nome do usuário: <input type="text" id="nome_usuario" /><br />
-    Senha: <input type="password" id="senha_usuario" /><br />
-    Data de nascimento: <input type="date" id="data_nascimento" /><br />
+    <p>PREENCHA TODOS OS CAMPOS:</p>
+    NOME DO USUÁRIO: <input type="text" id="nome_usuario" /><br />
+    SENHA: <input type="password" id="senha_usuario" /><br />
+    DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
     <button onclick={registrar_usuario}>Registrar usuário</button>
     <button onclick={autenticar_usuario}>Autenticar usuário</button>
   {:else}
