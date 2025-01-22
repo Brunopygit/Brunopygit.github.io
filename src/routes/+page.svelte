@@ -78,9 +78,9 @@
 
 <style>
     :global(body) {
-        background-color: rgb(0, 102, 255); /* Cor de fundo azul, em formato RGB */
+        background-color: rgb(0, 2, 100); /* Cor de fundo azul, em formato RGB */
         color: black; /* Cor do texto*/
-        font-family: Arial, sans-serif; /* Fonte para o texto */
+        font-family: Oswald Medium & Roboto Bold; /* Fonte para o texto */
         font-size: 30px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
@@ -96,7 +96,7 @@
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color:rgb(209, 50, 50); /* Cor verde para os botões */
+        background-color:rgb(147, 72, 197); /* Cor verde para os botões */
         color: white;
         border: none;
         border-radius: 5px;
@@ -104,7 +104,7 @@
     }
 
     button:hover {
-        background-color:rgb(255, 0, 0); /* Tom mais escuro ao passar o mouse */
+        background-color:rgb(99, 0, 129); /* Tom mais escuro ao passar o mouse */
     }
 
     input {
