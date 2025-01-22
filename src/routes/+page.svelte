@@ -94,9 +94,9 @@
 
     .container {
         background-color: white; /* Fundo branco */
-        color: black; /* Texto preto para contraste */
+        color: #191970; /* Texto preto para contraste */
         padding: 20px; /* Menor espaçamento para ajustar a altura */
-        width: 400px; /* Largura fixa para a caixa */
+        width: 500px; /* Largura fixa para a caixa */
         border-radius: 20px; /* Bordas arredondadas */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
     }
