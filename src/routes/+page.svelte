@@ -96,7 +96,7 @@
         background-color: white; /* Fundo branco */
         color: black; /* Texto preto para contraste */
         padding: 30px; /* Preenchimento para dar espaço entre o conteúdo e as bordas */
-        border-radius: 15px; /* Bordas arredondadas */
+        border-radius: 40px; /* Bordas arredondadas */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
     }
 
@@ -104,7 +104,7 @@
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color: rgb(167, 100, 212); /* Cor do botão */
+        background-color: rgb(85, 23, 126); /* Cor do botão */
         color: white;
         border: none;
         border-radius: 5px;
@@ -112,7 +112,7 @@
     }
 
     button:hover {
-        background-color: rgb(99, 0, 129); /* Tom mais escuro ao passar o mouse */
+        background-color: rgb(50, 1, 65); /* Tom mais escuro ao passar o mouse */
     }
 
     input {
