@@ -132,6 +132,7 @@
 <center>
   <div class="container">
     {#if !autenticado}
+    <h1>BEM VINDO</h1>
       <p>PREENCHA TODOS OS CAMPOS:</p>
       NOME: <input type="text" id="nome_usuario" /><br />
       SENHA: <input type="password" id="senha_usuario" /><br />
@@ -145,3 +146,4 @@
     {/if}
   </div>
 </center>
+t
