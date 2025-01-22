@@ -2,7 +2,7 @@
     let nome_usuario = '', senha_usuario = '', autenticado = false;
     let usuarios = {};
     let data_nascimento_string = '';
-  
+
     function calcular_idade() {
         const hj = new Date(), nascimento = new Date(data_nascimento_string);
         let idade = hj.getFullYear() - nascimento.getFullYear();
@@ -10,12 +10,12 @@
         if (mes < 0 || (mes === 0 && hj.getDate() < nascimento.getDate())) idade--;
         return idade;
     }
-  
+
     function registrar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
         data_nascimento_string = document.getElementById('data_nascimento').value;
-  
+
         if (nome_usuario && senha_usuario && data_nascimento_string) {
             const idade = calcular_idade();
             if (idade >= 12) {
@@ -36,11 +36,11 @@
             alert("Por favor, preencha todos os campos.");
         }
     }
-  
+
     function autenticar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
-  
+
         if (usuarios[nome_usuario] && usuarios[nome_usuario] === senha_usuario) {
             autenticado = true;
             alert("Usuário autenticado com sucesso!");
@@ -50,12 +50,12 @@
             alert("Nome de usuário ou senha incorretos.");
         }
     }
-  
+
     function desautenticar_usuario() {
         autenticado = false;
         alert("Você saiu da conta.");
     }
-  
+
     function excluir_usuario() {
         if (confirm("Tem certeza que deseja excluir a conta?")) {
             delete usuarios[nome_usuario];
@@ -63,7 +63,7 @@
             alert("Conta excluída com sucesso.");
         }
     }
-  
+
     function horario() {
         const horaatual = new Date().getHours();
         if (horaatual >= 6 && horaatual < 12) {
@@ -77,7 +77,7 @@
 </script>
 
 <style>
-    body {
+    :global(body) {
         background-color: rgb(0, 0, 255); /* Cor de fundo azul, em formato RGB */
         color: white; /* Cor do texto em branco */
         font-family: Arial, sans-serif; /* Fonte para o texto */
@@ -132,5 +132,4 @@
     <button onclick={desautenticar_usuario}>Sair da conta</button>
   {/if}
 </center>
-
 
