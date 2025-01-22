@@ -108,13 +108,16 @@
     }
 
     input {
-        padding: 8px;
-        margin: 10px 0;
-        font-size: 16px;
-        width: 200px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 200px; /* Largura uniforme para todos os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Garante que todos os inputs fiquem centralizados */
+}
 </style>
 
 
