@@ -1,19 +1,3 @@
-<div class="fundo-homepage">
-</div>
-<br />
-<br />
-
-<style>
-
-.fundo-homepage {
-background-color:rgb(26, 58, 238);
-background: 400px;
-}
-
-</style>
-
-
-
 <script>
     let nome_usuario = '', senha_usuario = '', autenticado = false;
     let usuarios = {};
@@ -120,6 +104,10 @@ background: 400px;
     <button onclick={desautenticar_usuario}>Sair da conta</button>
   {/if}
   </center>
+
+  p {
+    background-color: blue;
+  }
 
 
   
