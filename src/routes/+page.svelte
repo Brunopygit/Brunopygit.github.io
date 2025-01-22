@@ -91,7 +91,7 @@
   </style>
   
  
-  <body>
+ 
 
   <center>
   {#if !autenticado}
@@ -113,5 +113,3 @@
   {/if}
   </center>
 
-</body>
-  
