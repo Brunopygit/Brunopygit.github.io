@@ -79,9 +79,9 @@
 <style>
     :global(body) {
         background-color: rgb(0, 2, 100); /* Cor de fundo azul, em formato RGB */
-        color: black; /* Cor do texto*/
+        color: #483D8B; /* Cor do texto*/
         font-family: Oswald Medium & Roboto Bold; /* Fonte para o texto */
-        font-size: 30px; /* Tamanho do texto moderado */
+        font-size: 25px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
         margin: 0;
         padding: 0;
