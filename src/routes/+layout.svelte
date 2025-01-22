@@ -4,13 +4,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#/sobre">sobre</a>
+        <a class="navbar-brand" href="/sobre">sobre</a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a class="navbar-brand" href="/#">
+                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Brunopygit
+                  </a>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#/receitas">Receitas</a>
+            <a class="nav-link" href="/receitas">Receitas</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
