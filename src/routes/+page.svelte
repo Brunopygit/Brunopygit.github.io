@@ -83,9 +83,15 @@
         }
     }
   </script>
+
+<style>
+    body {
+      background-color: blue;
+    }
+  </style>
   
  
-  
+  <body>
 
   <center>
   {#if !autenticado}
@@ -107,13 +113,5 @@
   {/if}
   </center>
 
-  <style>
-    body {
-      background-color: blue;
-    }
-  </style>
-</head>
-<body>
-
-
+</body>
   
