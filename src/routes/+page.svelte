@@ -79,12 +79,12 @@
 <style>
     :global(body) {
         background-color: rgb(15, 15, 15); /* Cor de fundo azul, em formato RGB */
-        color:rgb(255, 255, 255); /* Cor do texto*/
+        color: rgb(255, 255, 255); /* Cor do texto */
         font-family: DIN Neuzeit Grotesk & Avenir Light; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
         text-align: center; /* Centraliza o texto */
-        margin: 10px;
-        padding: 90px;
+        margin: 0;
+        padding: 0;
         height: 100vh; /* Ocupa toda a altura da tela */
         display: flex;
         justify-content: center;
@@ -92,11 +92,19 @@
         flex-direction: column;
     }
 
+    .container {
+        background-color: white; /* Fundo branco */
+        color: black; /* Texto preto para contraste */
+        padding: 30px; /* Preenchimento para dar espaço entre o conteúdo e as bordas */
+        border-radius: 15px; /* Bordas arredondadas */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    }
+
     /* Estilos adicionais para os botões */
     button {
         margin: 10px;
         padding: 10px 20px;
-        background-color:rgb(167, 100, 212); /* Cor verde para os botões */
+        background-color: rgb(167, 100, 212); /* Cor do botão */
         color: white;
         border: none;
         border-radius: 5px;
@@ -104,35 +112,35 @@
     }
 
     button:hover {
-        background-color:rgb(99, 0, 129); /* Tom mais escuro ao passar o mouse */
+        background-color: rgb(99, 0, 129); /* Tom mais escuro ao passar o mouse */
     }
 
     input {
-    padding: 8px;
-    margin: 10px 0;
-    font-size: 16px;
-    width: 200px; /* Largura uniforme para todos os campos */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; /* Garante que todos os inputs fiquem centralizados */
-}
+        padding: 8px;
+        margin: 10px 0;
+        font-size: 16px;
+        width: 200px; /* Largura uniforme para todos os campos */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; /* Garante que todos os inputs fiquem centralizados */
+    }
 </style>
 
-
 <center>
-  {#if !autenticado}
-    <p>PREENCHA TODOS OS CAMPOS:</p>
-    NOME: <input type="text" id="nome_usuario" /><br />
-    SENHA: <input type="password" id="senha_usuario" /><br />
-    DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
-    <button onclick={registrar_usuario}>SIGN UP</button>
-    <button onclick={autenticar_usuario}>LOGIN</button>
-  {:else}
-    <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
-    <button onclick={excluir_usuario}>Excluir conta</button>
-    <button onclick={desautenticar_usuario}>Sair da conta</button>
-  {/if}
+  <div class="container">
+    {#if !autenticado}
+      <p>PREENCHA TODOS OS CAMPOS:</p>
+      NOME: <input type="text" id="nome_usuario" /><br />
+      SENHA: <input type="password" id="senha_usuario" /><br />
+      DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
+      <button onclick={registrar_usuario}>SIGN UP</button>
+      <button onclick={autenticar_usuario}>LOGIN</button>
+    {:else}
+      <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
+      <button onclick={excluir_usuario}>Excluir conta</button>
+      <button onclick={desautenticar_usuario}>Sair da conta</button>
+    {/if}
+  </div>
 </center>
-
