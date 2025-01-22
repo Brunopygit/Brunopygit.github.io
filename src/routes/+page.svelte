@@ -90,24 +90,7 @@
         flex-direction: column;
     }
 
-    /* Estilos para a navbar */
-    .navbar {
-        background-color: rgb(0, 0, 0); /* Cor de fundo preta para a navbar */
-        padding: 10px 20px;
-        text-align: left;
-        color: white;
-        font-size: 18px;
-    }
 
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        margin-right: 20px;
-    }
-
-    .navbar a:hover {
-        text-decoration: underline;
-    }
 
     /* Estilos para o conteúdo principal (container) */
     .container {

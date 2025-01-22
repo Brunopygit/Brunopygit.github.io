@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/#">DW4</a>
+        <a class="navbar-brand" href="/#">Home</a>
         <button
             class="navbar-toggler"
             type="button"
