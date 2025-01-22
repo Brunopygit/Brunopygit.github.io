@@ -84,6 +84,7 @@
     }
   </script>
   
+
   <center>
   {#if !autenticado}
     <p>Preencha os campos:</p>
@@ -112,12 +113,7 @@
 <style>
 
 .fundo-homepage {
-    background: rgb(255, 0, 157);
-    padding: 300px;
-    border-radius: 300px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 10px 20px rgb(0, 0, 0);
+background-color:rgb(26, 58, 238);
 }
 
 </style>
