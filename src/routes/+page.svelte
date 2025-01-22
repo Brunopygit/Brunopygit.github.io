@@ -3,7 +3,6 @@
     let usuarios = {};
     let data_nascimento_string = '';
   
-  
     function calcular_idade() {
         const hj = new Date(), nascimento = new Date(data_nascimento_string);
         let idade = hj.getFullYear() - nascimento.getFullYear();
@@ -12,12 +11,10 @@
         return idade;
     }
   
-  
     function registrar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
         data_nascimento_string = document.getElementById('data_nascimento').value;
-  
   
         if (nome_usuario && senha_usuario && data_nascimento_string) {
             const idade = calcular_idade();
@@ -40,11 +37,9 @@
         }
     }
   
-  
     function autenticar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
-  
   
         if (usuarios[nome_usuario] && usuarios[nome_usuario] === senha_usuario) {
             autenticado = true;
@@ -56,12 +51,10 @@
         }
     }
   
-  
     function desautenticar_usuario() {
         autenticado = false;
         alert("Você saiu da conta.");
     }
-  
   
     function excluir_usuario() {
         if (confirm("Tem certeza que deseja excluir a conta?")) {
@@ -70,7 +63,6 @@
             alert("Conta excluída com sucesso.");
         }
     }
-  
   
     function horario() {
         const horaatual = new Date().getHours();
@@ -82,28 +74,56 @@
             return "Boa noite";
         }
     }
-  </script>
+</script>
 
 <style>
     body {
-      background-color: blue;
+        background-color: rgb(0, 0, 255); /* Cor de fundo azul, em formato RGB */
+        color: white; /* Cor do texto em branco */
+        font-family: Arial, sans-serif; /* Fonte para o texto */
+        font-size: 18px; /* Tamanho do texto moderado */
+        text-align: center; /* Centraliza o texto */
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Ocupa toda a altura da tela */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-  </style>
-  
- 
- 
 
-  <center>
+    /* Estilos adicionais para os botões */
+    button {
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Cor verde para os botões */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049; /* Tom mais escuro ao passar o mouse */
+    }
+
+    input {
+        padding: 8px;
+        margin: 10px 0;
+        font-size: 16px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+
+<center>
   {#if !autenticado}
     <p>Preencha os campos:</p>
     <p>Site teste, exercício 02 de dw4.</p>
     Nome do usuário: <input type="text" id="nome_usuario" /><br />
-    <p></p>
     Senha: <input type="password" id="senha_usuario" /><br />
-    <p></p>
     Data de nascimento: <input type="date" id="data_nascimento" /><br />
-    <p></p>
-    <p></p>
     <button onclick={registrar_usuario}>Registrar usuário</button>
     <button onclick={autenticar_usuario}>Autenticar usuário</button>
   {:else}
@@ -111,5 +131,6 @@
     <button onclick={excluir_usuario}>Excluir conta</button>
     <button onclick={desautenticar_usuario}>Sair da conta</button>
   {/if}
-  </center>
+</center>
+
 
