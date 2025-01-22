@@ -111,15 +111,6 @@
 
 <style>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg,rgb(24, 166, 248),rgb(80, 51, 240));
-    color: rgb(46, 128, 206);
-    text-align: center;
-    padding: 50px 20px;
-}
-
-
 .fundo-homepage {
     background: rgba(64, 116, 228, 0.3);
     padding: 30px;
@@ -129,5 +120,5 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-  
+</style>
   
