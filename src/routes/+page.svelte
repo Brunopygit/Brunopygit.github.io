@@ -106,7 +106,7 @@
         margin: 10px;
         padding: 10px 20px;
         background-color: rgb(252, 248, 51); /* Cor do botão */
-        color: dark;
+        color: black;
         border: none;
         border-radius: 5px;
         cursor: pointer;
