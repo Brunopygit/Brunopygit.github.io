@@ -129,7 +129,7 @@
     }
 </style>
 
-<br><h1>BEM VINDO</h1></br>
+<h1>BEM VINDO</h1>
 <center>
   <div class="container">
     {#if !autenticado}
