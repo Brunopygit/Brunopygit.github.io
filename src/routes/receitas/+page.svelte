@@ -3,7 +3,6 @@
     let usuarios = {};
     let data_nascimento_string = '';
 
-
     function calcular_idade() {
         const hj = new Date(), nascimento = new Date(data_nascimento_string);
         let idade = hj.getFullYear() - nascimento.getFullYear();
@@ -12,12 +11,10 @@
         return idade;
     }
 
-
     function registrar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
         data_nascimento_string = document.getElementById('data_nascimento').value;
-
 
         if (nome_usuario && senha_usuario && data_nascimento_string) {
             const idade = calcular_idade();
@@ -40,11 +37,9 @@
         }
     }
 
-
     function autenticar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
-
 
         if (usuarios[nome_usuario] && usuarios[nome_usuario] === senha_usuario) {
             autenticado = true;
@@ -56,12 +51,10 @@
         }
     }
 
-
     function desautenticar_usuario() {
         autenticado = false;
         alert("Você saiu da conta.");
     }
-
 
     function excluir_usuario() {
         if (confirm("Tem certeza que deseja excluir a conta?")) {
@@ -70,7 +63,6 @@
             alert("Conta excluída com sucesso.");
         }
     }
-
 
     function horario() {
         const horaatual = new Date().getHours();
@@ -84,25 +76,17 @@
     }
 </script>
 
-
 <style>
-    /* Corpo do layout com ajuste para centralizar apenas o conteúdo */
-    :global(body) {
-        background-color: rgb(145, 241, 141); /* Cor de fundo azul, em formato RGB */
-        color: rgb(255, 255, 255); /* Cor do texto */
-        font-family: Helvetica; /* Fonte para o texto */
-        font-size: 15px; /* Tamanho do texto moderado */
+    /* Estilos para o fundo da página */
+    .background {
+        background-color: rgb(145, 241, 141); /* Cor de fundo específica em formato RGB */
         margin: 0;
         padding: 0;
         height: 100vh; /* Ocupa toda a altura da tela */
         display: flex;
-        flex-direction: column;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
     }
-
-
-
-
-
 
     /* Estilos para o conteúdo principal (container) */
     .container {
@@ -115,7 +99,6 @@
         margin: 20px auto; /* Centraliza o conteúdo dentro da página */
     }
 
-
     /* Estilos adicionais para os botões */
     button {
         margin: 10px;
@@ -127,11 +110,9 @@
         cursor: pointer;
     }
 
-
     button:hover {
         background-color: rgb(251, 255, 0); /* Tom mais escuro ao passar o mouse */
     }
-
 
     input {
         padding: 8px;
@@ -145,7 +126,6 @@
         margin-right: auto; /* Garante que todos os inputs fiquem centralizados */
     }
 </style>
-
 
 <!-- Conteúdo principal -->
 <h1 style="text-align: center;">BEM VINDO</h1>
@@ -165,3 +145,4 @@
     {/if}
   </div>
 </center>
+
