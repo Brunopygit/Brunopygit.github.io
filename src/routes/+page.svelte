@@ -21,6 +21,6 @@
 </div>
 
 <script>
-    import CartaMagic from '$lib/components/imagens.svelte';
-    import { cards } from '$lib/data.js';
+    import img from '$lib/components/imagens.svelte';
+    import { imagens } from '$lib/data.js';
   </script>
