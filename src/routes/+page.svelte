@@ -16,11 +16,6 @@
 
 <p>olá a todos</p>
 
-
+<img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif">
 
 </div>
-
-<script>
-    import imagens from '$lib/components/imagens.svelte';
-    import { imagenstopic } from '$lib/data.js';
-  </script>
