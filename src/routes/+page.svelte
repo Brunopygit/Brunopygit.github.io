@@ -31,15 +31,15 @@
 
     .Logoif {
         margin: 0;
-        width: 100px; /* Ajusta o tamanho da logo para um tamanho pequeno */
+        width: 10px; /* Ajusta o tamanho da logo para um tamanho pequeno */
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px; /* Espaçamento abaixo da logo */
+        margin-bottom: 5px; /* Espaçamento abaixo da logo */
     }
 
     .inscricao-button {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 </style>
 
