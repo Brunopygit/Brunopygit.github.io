@@ -145,6 +145,5 @@
       <button onclick={desautenticar_usuario}>Sair da conta</button>
     {/if}
   </div>
-</div>
 </center>
 
