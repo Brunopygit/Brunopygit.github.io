@@ -3,7 +3,7 @@
         background-color: rgb(15, 15, 15); /* Cor de fundo escura */
         color: rgb(255, 255, 255); /* Cor do texto */
         font-family: Helvetica; /* Fonte para o texto */
-        font-size: 90px; /* Tamanho do texto moderado */
+        font-size: 20px; /* Tamanho do texto moderado */
         margin: 0;
         padding: 0;
         height: 93vh; /* Ocupa toda a altura da tela */
