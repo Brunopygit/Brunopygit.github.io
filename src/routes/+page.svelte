@@ -45,7 +45,7 @@
 
 <div class="Logoif">
     <!-- Logo pequena -->
-    <img src="https://i.ytimg.com/vi/hUo04TlPVRA/maxresdefault.jpg" alt="Logo">
+    <img src="https://www.ifms.edu.br/noticias/ifms-divulga-nota-sobre-funcionamento-na-terca-e-quarta-feira-29-e-30-de-maio/mat_ifms_1.png/@@images/50a500d0-f669-41ae-97da-d167136ae2a1.png" alt="Logo">
 </div>
 
 <div class="background">
