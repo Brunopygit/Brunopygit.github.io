@@ -128,6 +128,7 @@
 </style>
 
 <!-- Conteúdo principal -->
+ <div class="background">
 <h1 style="text-align: center;">BEM VINDO</h1>
 <center>
   <div class="container">
@@ -144,5 +145,6 @@
       <button onclick={desautenticar_usuario}>Sair da conta</button>
     {/if}
   </div>
+</div>
 </center>
 
