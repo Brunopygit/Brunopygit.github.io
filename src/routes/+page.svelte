@@ -28,25 +28,10 @@
         margin-left: auto; /* Empurra a imagem para a direita */
         margin-top: 20px;
     }
-
-    .Logoif {
-        margin: 0;
-        width: 10px; /* Ajusta o tamanho da logo para um tamanho pequeno */
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5px; /* Espaçamento abaixo da logo */
-    }
-
     .inscricao-button {
         margin-top: 10px;
     }
 </style>
-
-<div class="Logoif">
-    <!-- Logo pequena -->
-    <img src="https://www.ifms.edu.br/noticias/ifms-divulga-nota-sobre-funcionamento-na-terca-e-quarta-feira-29-e-30-de-maio/mat_ifms_1.png/@@images/50a500d0-f669-41ae-97da-d167136ae2a1.png" alt="Logo">
-</div>
 
 <div class="background">
     <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão?</p>
