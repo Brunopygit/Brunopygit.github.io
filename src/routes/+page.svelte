@@ -6,7 +6,7 @@
     font-size: 15px; /* Tamanho do texto moderado */
     margin: 0;
     padding: 0;
-    height: 90vh; /* Ocupa toda a altura da tela */
+    height: 95vh; /* Ocupa toda a altura da tela */
     display: flex;
     flex-direction: column;
 }
