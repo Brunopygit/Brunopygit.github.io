@@ -27,23 +27,7 @@
         margin-left: auto; /* Empurra a imagem para a direita */
     }
 
-    .Logoif {
-        margin: 0;
-        width: 100px; /* Ajusta o tamanho da logo (menor que a imagem animada) */
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5px; /* Espaçamento do topo */
-    }
-
-    .inscricao-button {
-        margin-top: 20px;
-    }
-</style>
-
-<div class="Logoif">
-    <img src="https://i.ytimg.com/vi/hUo04TlPVRA/maxresdefault.jpg" alt="Logo">
-</div>
+   </style>
 
 <div class="background">
     <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão?</p>
