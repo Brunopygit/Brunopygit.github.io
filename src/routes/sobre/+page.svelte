@@ -1,6 +1,6 @@
 <style>  
     .background  {
-        background-color: rgb(61, 0, 158); /* Cor de fundo azul, em formato RGB */
+        background-color: rgb(142, 92, 223); /* Cor de fundo azul, em formato RGB */
         color: rgb(255, 255, 255); /* Cor do texto */
         font-family: Helvetica; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
