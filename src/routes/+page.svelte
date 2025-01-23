@@ -28,5 +28,22 @@
         <br><p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p></br>
         <br><p>clique no botão abaixo agora mesmo e seja FELIZ</p></br>
         <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
+
     </div>
+
+    <style>
+        .Logoif {
+            margin: 0;
+            width: 300px;
+            height: auto;
+            margin-left: auto;
+        }
+
+    </style>
+
+    <div class="Logoif">
+
+        <img src="https://i.ytimg.com/vi/hUo04TlPVRA/maxresdefault.jpg">
+
+</div>
     
