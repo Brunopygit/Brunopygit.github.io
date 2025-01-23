@@ -3,7 +3,7 @@
         background-color: rgb(15, 15, 15); /* Cor de fundo escura */
         color: rgb(255, 255, 255); /* Cor do texto */
         font-family: Helvetica; /* Fonte para o texto */
-        font-size: 15px; /* Tamanho do texto moderado */
+        font-size: 90px; /* Tamanho do texto moderado */
         margin: 0;
         padding: 0;
         height: 93vh; /* Ocupa toda a altura da tela */
@@ -24,7 +24,9 @@
     </style>
     
     <div class="background">
-        <p>Olá a todos</p>
+       <br><br> <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão  ?</p></br></br>
+        <br><p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p></br>
+        <br><p>clique no botão abaixo agora mesmo e seja FELIZ</p></br>
         <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
     </div>
     
