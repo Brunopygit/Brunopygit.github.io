@@ -29,11 +29,11 @@
 
     .Logoif {
         margin: 0;
-        width: 150px; /* Ajusta o tamanho da logo (menor que a imagem animada) */
+        width: 100px; /* Ajusta o tamanho da logo (menor que a imagem animada) */
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px; /* Espaçamento do topo */
+        margin-top: 5px; /* Espaçamento do topo */
     }
 
     .inscricao-button {
