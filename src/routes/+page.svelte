@@ -21,18 +21,7 @@
         height: auto; /* Mantém a proporção da imagem */
         margin-left: auto; /* Empurra a imagem para a direita */
     }
-    </style>
-    
-    <div class="background">
-        <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão  ?</p>
-        <p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p>
-        <p>clique no botão abaixo agora mesmo e seja FELIZ</p>
-        <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
-
-    </div>
-
-    <style>
-        .Logoif {
+    .Logoif {
             margin: 0;
             width: 300px;
             height: auto;
@@ -40,6 +29,14 @@
         }
 
     </style>
+    
+    <div class="background">
+        <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão  ?</p>
+        <p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p>
+        <p>clique no botão abaixo agora mesmo e seja FELIZ</p>
+        <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
+    </div>
+
 
     <div class="Logoif">
 
