@@ -14,8 +14,6 @@
     
     <div class = "background">
     
-    <p>olá a todos</p>
-    
     
     
     </div>

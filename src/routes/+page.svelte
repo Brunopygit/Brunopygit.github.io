@@ -19,3 +19,8 @@
 
 
 </div>
+
+<script>
+    import CartaMagic from '$lib/components/imagens.svelte';
+    import { cards } from '$lib/data.js';
+  </script>
