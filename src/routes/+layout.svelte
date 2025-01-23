@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-sm bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/#">DW4</a>
+        <a class="navbar-brand" href="/#">Inicio</a>
         <button
             class="navbar-toggler"
             type="button"
@@ -20,6 +20,13 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/receitas">Receitas</a>
                 </li>
             </ul>
         </div>
