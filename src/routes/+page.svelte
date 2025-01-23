@@ -24,9 +24,9 @@
     </style>
     
     <div class="background">
-       <br><br> <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão  ?</p></br></br>
-        <br><p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p></br>
-        <br><p>clique no botão abaixo agora mesmo e seja FELIZ</p></br>
+        <p>Deseja ter um curso técnico e ser alguém de botar moral nesse mundão  ?</p>
+        <p> Você chegou ao lugar certo, inscreva-se agora para a prova anual do IFMS </p>
+        <p>clique no botão abaixo agora mesmo e seja FELIZ</p></br>
         <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
 
     </div>
