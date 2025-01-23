@@ -21,6 +21,6 @@
 </div>
 
 <script>
-    import img from '$lib/components/imagens.svelte';
-    import { imagens } from '$lib/data.js';
+    import imagens from '$lib/components/imagens.svelte';
+    import { imagenstopic } from '$lib/data.js';
   </script>
