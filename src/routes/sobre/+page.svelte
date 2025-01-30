@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif; /* Fonte moderna e grossa */
-        background-color: rgb(160, 212, 229); /* Azul claro */
+        background-color: rgb(173, 216, 230) !important; /* Azul claro com !important */
         height: 100vh;
         display: flex;
         flex-direction: column;
