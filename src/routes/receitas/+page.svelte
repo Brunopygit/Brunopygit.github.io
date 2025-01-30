@@ -77,12 +77,15 @@
 </script>
 
 <style>
+    /* Importando a fonte "Poppins" */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
     /* Estilos para o container principal */
     .page-container {
         background-color: rgb(15, 15, 15); /* Cor de fundo */
         color: rgb(255, 255, 255); /* Cor do texto */
-        font-family: Helvetica, Arial, sans-serif; /* Fonte para o texto */
-        font-size: 15px; /* Tamanho do texto */
+        font-family: 'Poppins', sans-serif; /* Fonte mais destacada */
+        font-size: 16px; /* Tamanho do texto */
         margin: 0;
         padding: 0;
         height: 100vh; /* Ocupa toda a altura da tela */
@@ -96,11 +99,12 @@
     .container {
         background-color: white; /* Fundo branco */
         color: rgb(0, 0, 0); /* Texto preto para contraste */
-        padding: 20px;
-        width: 500px;
-        border-radius: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px; /* Maior espaçamento interno */
+        width: 500px; /* Largura fixa */
+        border-radius: 20px; /* Bordas arredondadas */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
         margin: 20px auto;
+        text-align: center; /* Centraliza o texto */
     }
 
     /* Estilos para os botões */
@@ -112,6 +116,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-weight: bold; /* Deixa o texto dos botões em negrito */
     }
 
     button:hover {
@@ -120,15 +125,20 @@
 
     /* Estilos para os inputs */
     input {
-        padding: 8px;
-        margin: 10px 0;
+        padding: 10px;
+        margin: 15px 0;
         font-size: 16px;
-        width: 200px;
+        width: 100%; /* Largura total */
         border: 1px solid #ccc;
         border-radius: 5px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        box-sizing: border-box; /* Garante que o padding não afete a largura */
+    }
+
+    /* Tornar o texto mais destacado e em negrito */
+    .container p {
+        font-weight: bold;
+        font-size: 18px; /* Aumenta o tamanho do texto */
     }
 </style>
 
