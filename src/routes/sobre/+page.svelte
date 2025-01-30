@@ -6,24 +6,24 @@
 </script>
 
 <style>
-    /* Estilos globais */
-    :global(body) {
+    /* Estilos específicos para esta página */
+    body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-color: rgb(173, 216, 230); /* Azul claro */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
     }
 
+    /* Container centralizado */
     .container {
         text-align: center;
         background-color: white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     h1 {
@@ -52,12 +52,21 @@
     .store-button:hover {
         background-color: rgb(0, 86, 179);
     }
+
+    /* Cor de fundo específica para esta página */
+    body.specific-page {
+        background-color: rgb(173, 216, 230); /* Azul claro */
+        height: 100vh;
+    }
 </style>
 
-<div class="container">
-    <h1>Venha fazer parte da família Wanderson Fit, estamos ansiosos pela sua participação, bora pro treino !</h1>
-    <div class="mid-text">
-        Acesse aqui a nossa loja e venha ficar grandão:
+<!-- Adicione a classe 'specific-page' ao body desta página -->
+<body class="specific-page">
+    <div class="container">
+        <h1>Venha fazer parte da família Wanderson Fit, estamos ansiosos pela sua participação, bora pro treino !</h1>
+        <div class="mid-text">
+            Acesse aqui a nossa loja e venha ficar grandão:
+        </div>
+        <button class="store-button" onclick="redirectToStore()">Ir para a Loja</button>
     </div>
-    <button class="store-button" on:click={redirectToStore}>Ir para a Loja</button>
-</div>
+</body>
