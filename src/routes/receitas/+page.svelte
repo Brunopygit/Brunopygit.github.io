@@ -3,7 +3,6 @@
     let usuarios = {};
     let data_nascimento_string = '';
 
-
     function calcular_idade() {
         const hj = new Date(), nascimento = new Date(data_nascimento_string);
         let idade = hj.getFullYear() - nascimento.getFullYear();
@@ -12,12 +11,10 @@
         return idade;
     }
 
-
     function registrar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
         data_nascimento_string = document.getElementById('data_nascimento').value;
-
 
         if (nome_usuario && senha_usuario && data_nascimento_string) {
             const idade = calcular_idade();
@@ -40,11 +37,9 @@
         }
     }
 
-
     function autenticar_usuario() {
         nome_usuario = document.getElementById('nome_usuario').value;
         senha_usuario = document.getElementById('senha_usuario').value;
-
 
         if (usuarios[nome_usuario] && usuarios[nome_usuario] === senha_usuario) {
             autenticado = true;
@@ -56,12 +51,10 @@
         }
     }
 
-
     function desautenticar_usuario() {
         autenticado = false;
         alert("Você saiu da conta.");
     }
-
 
     function excluir_usuario() {
         if (confirm("Tem certeza que deseja excluir a conta?")) {
@@ -70,7 +63,6 @@
             alert("Conta excluída com sucesso.");
         }
     }
-
 
     function horario() {
         const horaatual = new Date().getHours();
@@ -84,37 +76,32 @@
     }
 </script>
 
-
 <style>
-    /* Corpo do layout com ajuste para centralizar apenas o conteúdo */
-    :global(body) {
-        background-color: rgb(15, 15, 15); /* Cor de fundo azul, em formato RGB */
+    /* Estilos específicos para o body desta página */
+    body.specific-page {
+        background-color: rgb(15, 15, 15); /* Cor de fundo escura */
         color: rgb(255, 255, 255); /* Cor do texto */
-        font-family: Helvetica; /* Fonte para o texto */
+        font-family: Helvetica, sans-serif; /* Fonte para o texto */
         font-size: 15px; /* Tamanho do texto moderado */
         margin: 0;
         padding: 0;
         height: 100vh; /* Ocupa toda a altura da tela */
         display: flex;
         flex-direction: column;
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
     }
-
-
-
-
-
 
     /* Estilos para o conteúdo principal (container) */
     .container {
         background-color: white; /* Fundo branco */
         color: rgb(0, 0, 0); /* Texto preto para contraste */
-        padding: 20px; /* Menor espaçamento para ajustar a altura */
+        padding: 20px; /* Espaçamento interno */
         width: 500px; /* Largura fixa para a caixa */
         border-radius: 20px; /* Bordas arredondadas */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
-        margin: 20px auto; /* Centraliza o conteúdo dentro da página */
+        text-align: center; /* Centraliza o texto */
     }
-
 
     /* Estilos adicionais para os botões */
     button {
@@ -127,12 +114,11 @@
         cursor: pointer;
     }
 
-
     button:hover {
         background-color: rgb(251, 255, 0); /* Tom mais escuro ao passar o mouse */
     }
 
-
+    /* Estilos para os inputs */
     input {
         padding: 8px;
         margin: 10px 0;
@@ -142,28 +128,25 @@
         border-radius: 5px;
         display: block;
         margin-left: auto;
-        margin-right: auto; /* Garante que todos os inputs fiquem centralizados */
+        margin-right: auto; /* Centraliza os inputs */
     }
 </style>
 
-
-<!-- Conteúdo principal -->
-<h1 style="text-align: center;">BEM VINDO</h1>
-<center>
-  <div class="container">
-    {#if !autenticado}
-      <p>PREENCHA TODOS OS CAMPOS:</p>
-      NOME: <input type="text" id="nome_usuario" /><br />
-      SENHA: <input type="password" id="senha_usuario" /><br />
-      DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
-      <button onclick={registrar_usuario}>SIGN UP</button>
-      <button onclick={autenticar_usuario}>LOGIN</button>
-    {:else}
-      <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
-      <button onclick={excluir_usuario}>Excluir conta</button>
-      <button onclick={desautenticar_usuario}>Sair da conta</button>
-    {/if}
-  </div>
-</center>
-
-
+<!-- Adiciona a classe 'specific-page' ao body desta página -->
+<body class="specific-page">
+    <h1 style="text-align: center;">BEM VINDO</h1>
+    <div class="container">
+        {#if !autenticado}
+            <p>PREENCHA TODOS OS CAMPOS:</p>
+            NOME: <input type="text" id="nome_usuario" /><br />
+            SENHA: <input type="password" id="senha_usuario" /><br />
+            DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
+            <button onclick="registrar_usuario()">SIGN UP</button>
+            <button onclick="autenticar_usuario()">LOGIN</button>
+        {:else}
+            <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
+            <button onclick="excluir_usuario()">Excluir conta</button>
+            <button onclick="desautenticar_usuario()">Sair da conta</button>
+        {/if}
+    </div>
+</body>
