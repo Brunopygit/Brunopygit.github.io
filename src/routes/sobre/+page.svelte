@@ -7,10 +7,15 @@
 
 <style>
     /* Estilos específicos para esta página */
-    body {
+    body.specific-page {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
+        background-color: rgb(173, 216, 230); /* Azul claro */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Container centralizado */
@@ -20,22 +25,20 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        max-width: 600px; /* Largura máxima reduzida */
+        width: 90%; /* Largura responsiva */
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Fonte reduzida */
         color: rgb(0, 0, 0);
         margin-bottom: 20px;
     }
 
     .mid-text {
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Fonte reduzida */
         color: rgb(0, 0, 0);
-        margin-top: 40px;
+        margin-top: 20px; /* Espaçamento reduzido */
     }
 
     .store-button {
@@ -51,12 +54,6 @@
 
     .store-button:hover {
         background-color: rgb(0, 86, 179);
-    }
-
-    /* Cor de fundo específica para esta página */
-    body.specific-page {
-        background-color: rgb(173, 216, 230); /* Azul claro */
-        height: 100vh;
     }
 </style>
 
