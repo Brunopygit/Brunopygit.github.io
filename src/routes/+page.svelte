@@ -41,5 +41,5 @@
     <img src="https://i.pinimg.com/originals/f3/f9/d4/f3f9d4e478e5d05bf16969bc551b3d45.gif" alt="Imagem animada">
 
     <!-- Botão inscreva-se -->
-    <a href="https://brunopygit.github.io/receitas" class="btn btn-primary inscricao-button">Inscreva-se</a>
+    <a href="https://brunopygit.github.io/login" class="btn btn-primary inscricao-button">Inscreva-se</a>
 </div>
