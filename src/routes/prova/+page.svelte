@@ -1,21 +1,10 @@
+
 <script>
+    import{questionario} from "$lib/questionario"
     let promise = $state();
-    let questionario = $state([]);
     let respostas = $state([]);
     let respondeu = $state(false);
   
-    function gerarNovoQuiz() {
-        respondeu = false;
-        promise = fetch('https://opentdb.com/api.php?amount=5&category=9&type=multiple')
-            .then((response) => response.json())
-            .then((data) => {
-                questionario = data.results;
-                for (const pergunta of questionario) {
-                    const i = Math.floor(Math.random() * pergunta.incorrect_answers.length + 1);
-                    pergunta.incorrect_answers.splice(i, 0, pergunta.correct_answer);
-                }
-            });
-    }
   
     function verificarRespostas() {
         respondeu = true;
@@ -30,15 +19,10 @@
   </script>
   
   <div class="container">
-    <button class="btn btn-info" onclick={gerarNovoQuiz}>Gerar novo quiz</button>
-  
-    {#await promise}
-        <p>Gerando novo questionário...</p>
-    {:then}
         <ol>
             {#each questionario as pergunta, i}
                 <h4><li>{@html pergunta.question}</li></h4>
-                {#each pergunta.incorrect_answers as alternativa}
+                {#each pergunta.answers as alternativa}
                     <div class="form-check">
                         <input class="form-check-input" type="radio" id={alternativa} bind:group={respostas[i]} value={alternativa} oninput={() => (respondeu = false)} />
                         <label class="form-check-label" for={alternativa}>{@html alternativa}</label>
@@ -55,7 +39,4 @@
             {/each}
         </ol>
         <button onclick={verificarRespostas} class="btn btn-success">Confirmar!</button>
-    {:catch error}
-        <p style="color: red">{error.message}</p>
-    {/await}
   </div>
