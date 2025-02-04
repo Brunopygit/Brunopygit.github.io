@@ -19,14 +19,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/sobre">Sobre</a>
+                    <a class="nav-link" href="/prova">Prova</a>
                 </li>
             </ul>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/receitas">Receitas</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
             </ul>
         </div>
