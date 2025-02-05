@@ -150,7 +150,7 @@
 
 <!-- Conteúdo principal -->
 <div class="page-container">
-    <h1 style="text-align: center;">BEM VINDO</h1>
+    <h1 style="text-align: center;"> Tudo certo ! Agora já pode fazer a avaliação.</h1>
     <div class="container">
         {#if !autenticado}
             <p>PREENCHA TODOS OS CAMPOS:</p>
