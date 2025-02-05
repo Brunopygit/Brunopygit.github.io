@@ -21,8 +21,9 @@
             if (idade >= 12) {
                 if (!usuarios[nome_usuario]) {
                     usuarios[nome_usuario] = senha_usuario;
-                    autenticado = true;
+                    autenticado = true; // Alterando a variável para exibir a interface de autenticado
                     alert("Usuário registrado com sucesso!");
+                    // Limpa os campos após o registro
                     document.getElementById('nome_usuario').value = '';
                     document.getElementById('senha_usuario').value = '';
                     document.getElementById('data_nascimento').value = '';
@@ -44,6 +45,7 @@
         if (usuarios[nome_usuario] && usuarios[nome_usuario] === senha_usuario) {
             autenticado = true;
             alert("Usuário autenticado com sucesso!");
+            // Limpa os campos após a autenticação
             document.getElementById('nome_usuario').value = '';
             document.getElementById('senha_usuario').value = '';
         } else {
@@ -73,6 +75,10 @@
         } else {
             return "Boa noite";
         }
+    }
+
+    function direcionar_prova() {
+        window.location.href = "https://brunopygit.github.io/prova";
     }
 </script>
 
@@ -148,15 +154,16 @@
     <div class="container">
         {#if !autenticado}
             <p>PREENCHA TODOS OS CAMPOS:</p>
-            NOME: <input type="text" id="nome_usuario" /><br />
-            SENHA: <input type="password" id="senha_usuario" /><br />
-            DATA DE NASCIMENTO: <input type="date" id="data_nascimento" /><br />
+            NOME: <input type="text" id="nome_usuario" bind:value={nome_usuario} /><br />
+            SENHA: <input type="password" id="senha_usuario" bind:value={senha_usuario} /><br />
+            DATA DE NASCIMENTO: <input type="date" id="data_nascimento" bind:value={data_nascimento_string} /><br />
             <button on:click={registrar_usuario}>SIGN UP</button>
             <button on:click={autenticar_usuario}>LOGIN</button>
         {:else}
             <p>{horario()}, bem-vindo(a) {nome_usuario}, você tem {calcular_idade()} anos</p>
             <button on:click={excluir_usuario}>Excluir conta</button>
             <button on:click={desautenticar_usuario}>Sair da conta</button>
+            <button on:click={direcionar_prova}>Prova</button>
         {/if}
     </div>
 </div>
